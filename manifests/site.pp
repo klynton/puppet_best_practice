@@ -1,1 +1,1 @@
-include profile::wordpress
+include profiles::wordpress

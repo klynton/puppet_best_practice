@@ -1,7 +1,7 @@
-class profile::wordpress {
-:
-  $domain = hiera('profiles::wordpress::domain')
-  $docroot = hiera('profiles::wordpress::docroot')
+class profiles::wordpress {
+
+  $domain = hiera('domain')
+  $docroot = hiera('docroot')
   
   host { $domain:
     ip => $::ipaddress,

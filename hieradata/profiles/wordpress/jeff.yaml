@@ -1,0 +1,11 @@
+---
+domain:
+ - jeff.malnick.com
+
+wordpress_user:
+ - jeff
+
+docroot:
+ - /var/www/wordpress
+
+

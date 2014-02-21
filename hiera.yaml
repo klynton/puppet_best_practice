@@ -2,7 +2,7 @@
 :backends:
   - yaml
 :hierarchy:
-  - "profiles/%{fqdn}"
+  - "profiles/wordpress/%{hostname}"
   - common
 
 :yaml:
