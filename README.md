@@ -35,6 +35,20 @@ In your $puppetdir (PE, /etc/puppetlabs/puppet) or POSSS /etc/puppet/):
 
 otherwise, on your demo agent:
 
-	FACTER_hostname=jeff puppet agent -t 
+	FACTER_hostname=jeff puppet agent -t
+
+	Update your host machine's /etc/hosts file
+
+Class discussion:
+
+	site.pp - hey check this out, we just 'include profiles::wordpress' for any node, super simple and easy to understand declaration!
+
+	Hiera - traverse the hieradata directory structure. Add a node from the classroom and create a .yaml file for them on the fly, run. Update the site.pp to include them if neccessary or if you just set it to default run the puppet agent on their machine again on the screen by ssh'ing into their box so the class can see it in action. Make sure to make some blatant variable declarations that are node specific to them in the hiera data. 
+
+	Hiera abstraction - why this is important. No variables are set inside the manifest, everything is gained from hiera yaml files. If you have current JSON nijas ensure they know about other backends. 
+
+	Profiles - ensure the students understand how the wrapper module works, why we did it. It's pretty neat to be able to have simple node classification, no need to use parameterized class syntax, clean node declarations and easy re-usability. 
+
+ 	
 
  - R&D (rip off and deploy) to suit your needs. 
