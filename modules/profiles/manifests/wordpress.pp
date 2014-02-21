@@ -24,7 +24,7 @@ class profiles::wordpress {
   class { 'mysql::bindings':
     php_enable => 'true',
   }
-  class { 'wordpress':
+  class { '::wordpress':
     install_dir => $docroot,
     }
 }
