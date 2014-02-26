@@ -1,4 +1,4 @@
-## Wordpress Deployment using Puppet Best Pracices
+## Wordpress Deployment using Puppet Best Practices
 
 This is a wordpress module that deploys a wordpress blog using puppet best practices. It's not meant to be a production module but rather an instanciation of the CURRENT best practices we at Puppet promote.
 
